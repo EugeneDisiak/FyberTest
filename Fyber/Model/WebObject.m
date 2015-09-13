@@ -22,10 +22,8 @@ static EKObjectMapping *_mapping = nil;
 {
     self = [super init];
     if (self) {
-        
         // common instantiation
         if (initBlock) initBlock(self);
-        
     }
     return self;
 }
@@ -46,8 +44,5 @@ static EKObjectMapping *_mapping = nil;
             constructingBlock(_self);
     }];
 }
-
-
-
 
 @end

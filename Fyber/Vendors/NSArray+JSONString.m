@@ -12,12 +12,12 @@
 
 @implementation NSArray (JSONString)
 
-- (NSString*)jsonString
+- (NSString *)jsonString
 {
     return jsonStringWithArray(self);
 }
 
-- (NSString*)jsonStringWithURLEncodedItems
+- (NSString *)jsonStringWithURLEncodedItems
 {
     return jsonStringWithArray([self objectWithURLEncodedItems]);
 }
@@ -38,7 +38,7 @@
     return array;
 }
 
-NSString* jsonStringWithArray(NSArray *array)
+NSString *jsonStringWithArray(NSArray *array)
 {
     NSError *error;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:array

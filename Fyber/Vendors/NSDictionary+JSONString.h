@@ -9,7 +9,7 @@
 
 @interface NSDictionary (JSONString)
 
-- (NSString*)jsonString;
-- (NSString*)jsonStringWithURLEncodedItems;
+- (NSString *)jsonString;
+- (NSString *)jsonStringWithURLEncodedItems;
 
 @end

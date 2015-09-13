@@ -8,9 +8,11 @@
 
 #import <XCTest/XCTest.h>
 #import "NSString+Networking.h"
-#import <AFNetworking/AFNetworking.h>
+#import "OffersTableViewController.h"
 
 @interface FyberTests : XCTestCase
+
+@property OffersTableViewController *tvc;
 
 @end
 
@@ -19,6 +21,7 @@
 - (void)setUp {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
+    self.tvc = [[OffersTableViewController alloc] init];
 }
 
 - (void)tearDown {
@@ -26,21 +29,23 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-}
-
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
-}
-
 - (void)testStringHash {
     NSString *testString = @"Test string";
     XCTAssertNotNil(testString.sha1);
+}
+
+- (void)testTableViewControllerView {
+    UIView *view;
+    view = [self.tvc view];
+    XCTAssertNotNil(view);
+}
+
+- (void)testTableViewControllerTableView {
+    XCTAssertNotNil(self.tvc.tableView);
+}
+
+- (void)testTableViewSections {
+    XCTAssertEqual(self.tvc.tableView.numberOfSections, 1);
 }
 
 @end

@@ -10,7 +10,7 @@
 
 @interface NSArray (JSONString)
 
-- (NSString*)jsonString;
-- (NSString*)jsonStringWithURLEncodedItems;
+- (NSString *)jsonString;
+- (NSString *)jsonStringWithURLEncodedItems;
 
 @end

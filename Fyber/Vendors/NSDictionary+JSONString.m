@@ -11,17 +11,17 @@
 
 @implementation NSDictionary (JSONString)
 
-- (NSString*)jsonString
+- (NSString *)jsonString
 {
     return jsonStringWithDictionary(self, NO);
 }
 
-- (NSString*)jsonStringWithQuotes
+- (NSString *)jsonStringWithQuotes
 {
     return jsonStringWithDictionary(self, YES);
 }
 
-- (NSString*)jsonStringWithURLEncodedItems
+- (NSString *)jsonStringWithURLEncodedItems
 {
     return jsonStringWithDictionary([self objectWithURLEncodedItems], NO);
 }
@@ -45,7 +45,7 @@
     return dict;
 }
 
-NSString* jsonStringWithDictionary(NSDictionary *dict, BOOL addQuotes)
+NSString *jsonStringWithDictionary(NSDictionary *dict, BOOL addQuotes)
 {
     NSError *error;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dict

@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController <UITextFieldDelegate>
 
+@property (weak, nonatomic) IBOutlet UITextField *userID;
+@property (weak, nonatomic) IBOutlet UITextField *apiKey;
+@property (weak, nonatomic) IBOutlet UITextField *appID;
 
 @end
 

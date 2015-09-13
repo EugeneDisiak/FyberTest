@@ -11,6 +11,7 @@
 		4342BF03DD709E7481A4448F /* libPods-FyberTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1786D203A5FFB219A5D0B212 /* libPods-FyberTests.a */; };
 		7A33E51D1BA378070093B137 /* SampleSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A33E51C1BA378070093B137 /* SampleSpec.m */; settings = {ASSET_TAGS = (); }; };
 		7A43DB551BA3711E00B3F3BF /* FyberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A43DB541BA3711E00B3F3BF /* FyberTests.m */; };
+		7A5EC5AF1BA6007400920FD5 /* ViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5EC5AE1BA6007400920FD5 /* ViewControllerSpec.m */; settings = {ASSET_TAGS = (); }; };
 		7AB90D661BA1A43500479E68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB90D651BA1A43500479E68 /* main.m */; };
 		7AB90D691BA1A43500479E68 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB90D681BA1A43500479E68 /* AppDelegate.m */; };
 		7AB90D6C1BA1A43500479E68 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB90D6B1BA1A43500479E68 /* ViewController.m */; };
@@ -47,6 +48,7 @@
 		7A43DB521BA3711E00B3F3BF /* FyberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FyberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A43DB541BA3711E00B3F3BF /* FyberTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FyberTests.m; sourceTree = "<group>"; };
 		7A43DB561BA3711E00B3F3BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A5EC5AE1BA6007400920FD5 /* ViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerSpec.m; sourceTree = "<group>"; };
 		7AB90D611BA1A43500479E68 /* Fyber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fyber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB90D651BA1A43500479E68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7AB90D671BA1A43500479E68 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				7A33E51C1BA378070093B137 /* SampleSpec.m */,
+				7A5EC5AE1BA6007400920FD5 /* ViewControllerSpec.m */,
 				7A43DB541BA3711E00B3F3BF /* FyberTests.m */,
 				7A43DB561BA3711E00B3F3BF /* Info.plist */,
 			);
@@ -385,6 +388,7 @@
 			files = (
 				7A33E51D1BA378070093B137 /* SampleSpec.m in Sources */,
 				7A43DB551BA3711E00B3F3BF /* FyberTests.m in Sources */,
+				7A5EC5AF1BA6007400920FD5 /* ViewControllerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

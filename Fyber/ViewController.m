@@ -12,9 +12,6 @@
 
 @interface ViewController ()
 
-@property (weak, nonatomic) IBOutlet UITextField *userID;
-@property (weak, nonatomic) IBOutlet UITextField *apiKey;
-@property (weak, nonatomic) IBOutlet UITextField *appID;
 @property (strong, nonatomic) NSArray *array;
 
 @end
@@ -56,19 +53,26 @@
         return;
     }
     
+    // In case of TASK 7, this method can be run at once on AppDelegate file. It will initialize Fiber SDK
     [FBRAPI setupFiberWithUserId:self.userID.text
                        andApiKey:self.apiKey.text
                         andAppID:self.appID.text];
-    
+
+    // In case of TASK 7, this method can be run at once in any place (Button Action or any other)
+    // As parameter: send SELF as Current View Controller
+    // As response: receive Table View Controller
     [FBRAPI getOffersWithSuccess: ^(NSArray *array) {
+                            // IF Array empty -> FAIL message
                             if (array == nil || [array count] == 0) {
                                 [self displayNotificationMessageWithTitle:@"Fail!" andText:@"No offers."];
                             } else {
+                                // IF Offers exists -> open Table View Controller with Offers
                                 self.array = array;
                                 [self performSegueWithIdentifier:@"displayOffers" sender:self];
                             }
                         }
                         failure: ^(NSError *error, AFHTTPRequestOperation *operation) {
+                            // IF wrong responce -> FAIL message
                             [self displayNotificationMessageWithTitle:@"Fail!" andText:@"Check your data and try again later."];
                         }];
 }
@@ -94,13 +98,13 @@
 }
 
 #pragma mark - UITextFieldDelegate
-
+// Dismiss keyboard on DONE button tap
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    // done button was tapped - dismiss keyboard
     [textField resignFirstResponder];
     return YES;
 }
 
+// Dismiss keyboard on any View tap
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [self.view endEditing:YES];
 }
