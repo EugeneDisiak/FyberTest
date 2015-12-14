@@ -38,6 +38,16 @@
                ReferencedContainer = "container:Fyber.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7A2BC5741BDE6B8B008B16E1"
+               BuildableName = "FyberSDKTests.xctest"
+               BlueprintName = "FyberSDKTests"
+               ReferencedContainer = "container:Fyber.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

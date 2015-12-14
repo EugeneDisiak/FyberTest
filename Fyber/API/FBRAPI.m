@@ -13,7 +13,6 @@
 #import <AdSupport/ASIdentifierManager.h>
 
 static const NSString *_requestURL = @"http://api.sponsorpay.com/feed/v1/offers.json?";
-
 static NSString *_userID = nil;
 static NSString *_apiKey = nil;
 static NSString *_appID = nil;
@@ -74,20 +73,17 @@ static NSString *_offerTypes = nil;
                     // Validate responce
                     if ([self validateResponce:operation]) {
                         // Valid Response, parsing data
-                        NSLog(@"JSON: %@", responseObject);
                         if (success) {
                             success([self arrayForKeyPath:@"offers"
                                                    inJson:responseObject
                                                itemsClass:[FBROffer class]]);
                         }
                     } else {
-                        // Not valide Response
-                        NSLog(@"They are NOT equal");
+                        // Not valide Response, return empty array
                         success([[NSArray alloc] init]);
                     }
                 }
                 failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                    NSLog(@"Error: %@", error);
                     failure(error, operation);
          }];
 }
@@ -122,10 +118,14 @@ static NSString *_offerTypes = nil;
                   itemsClass:(Class)class
 {
     if (!keyPath) return nil;
+    
     NSMutableArray *result = [NSMutableArray new];
     NSArray *data = [json valueForKeyPath:keyPath];
-    for (NSDictionary *item in data)
+    
+    for (NSDictionary *item in data) {
         [result addObject:[[class alloc] initWithJson:item]];
+    }
+    
     return result;
 }
 

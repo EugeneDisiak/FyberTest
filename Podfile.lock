@@ -24,20 +24,15 @@ PODS:
     - EasyMapping/Core (= 0.15.2)
   - EasyMapping/Core (0.15.2)
   - Kiwi (2.4.0)
-  - SDWebImage (3.7.3):
-    - SDWebImage/Core (= 3.7.3)
-  - SDWebImage/Core (3.7.3)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.6)
   - EasyMapping (~> 0.15.0)
   - Kiwi
-  - SDWebImage (~> 3.7)
 
 SPEC CHECKSUMS:
   AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
   EasyMapping: ed12870ba180fbf7ac5538f1534f5623bb8d6b9b
   Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
-  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0

@@ -7,29 +7,71 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		33C9459B80F81628A7EDD04D /* libPods-Fyber.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A89897C0761100E2E49612E /* libPods-Fyber.a */; };
-		4342BF03DD709E7481A4448F /* libPods-FyberTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1786D203A5FFB219A5D0B212 /* libPods-FyberTests.a */; };
-		7A33E51D1BA378070093B137 /* SampleSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A33E51C1BA378070093B137 /* SampleSpec.m */; settings = {ASSET_TAGS = (); }; };
+		68CBC4F751929E9B654A0D49 /* libPods-Fyber.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A89897C0761100E2E49612E /* libPods-Fyber.a */; };
+		6DB755496D40E7796D12531C /* libPods-FyberSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9F27A9538E3B11BF4B18C7 /* libPods-FyberSDK.a */; };
+		7A2BC5761BDE6B8B008B16E1 /* FyberSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A2BC56C1BDE6B8B008B16E1 /* FyberSDK.framework */; };
+		7A2BC57D1BDE6B8B008B16E1 /* FyberSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2BC57C1BDE6B8B008B16E1 /* FyberSDKTests.m */; };
+		7A2BC5811BDE6B8B008B16E1 /* FyberSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A2BC56C1BDE6B8B008B16E1 /* FyberSDK.framework */; };
+		7A2BC5821BDE6B8B008B16E1 /* FyberSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A2BC56C1BDE6B8B008B16E1 /* FyberSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7A2BC58C1BDE6C29008B16E1 /* FyberSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A2BC58A1BDE6C29008B16E1 /* FyberSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A2BC58D1BDE6C29008B16E1 /* FyberSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2BC58B1BDE6C29008B16E1 /* FyberSDK.m */; };
+		7A2BC58E1BDE7250008B16E1 /* FBRAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB90D7D1BA1BF9A00479E68 /* FBRAPI.m */; };
+		7A2BC58F1BDE7250008B16E1 /* NSArray+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB90D811BA1D17F00479E68 /* NSArray+JSONString.m */; };
+		7A2BC5901BDE7250008B16E1 /* NSDictionary+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB90D831BA1D17F00479E68 /* NSDictionary+JSONString.m */; };
+		7A2BC5911BDE7250008B16E1 /* NSString+Networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB90D851BA1D17F00479E68 /* NSString+Networking.m */; };
+		7A2BC5921BDE7250008B16E1 /* WebObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AEC6D8C1BA2DCAC00A33B43 /* WebObject.m */; };
+		7A2BC5931BDE7250008B16E1 /* FBROffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AEC6D8F1BA2DD5100A33B43 /* FBROffer.m */; };
+		7A2BC5941BDE7250008B16E1 /* OfferImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AEC6D921BA2F2E600A33B43 /* OfferImage.m */; };
+		7A2BC5951BDE7250008B16E1 /* NewOfferTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A68D7B01BA6E48F00021FDE /* NewOfferTableViewCell.m */; };
+		7A2BC5961BDE7250008B16E1 /* NewOffersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A68D7A91BA6E04B00021FDE /* NewOffersTableViewController.m */; };
+		7A2BC5971BDE726B008B16E1 /* FBRAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AB90D7C1BA1BF9A00479E68 /* FBRAPI.h */; };
+		7A2BC5981BDE726B008B16E1 /* NSArray+JSONString.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AB90D801BA1D17F00479E68 /* NSArray+JSONString.h */; };
+		7A2BC5991BDE726B008B16E1 /* NSDictionary+JSONString.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AB90D821BA1D17F00479E68 /* NSDictionary+JSONString.h */; };
+		7A2BC59A1BDE726B008B16E1 /* NSString+Networking.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AB90D841BA1D17F00479E68 /* NSString+Networking.h */; };
+		7A2BC59B1BDE726B008B16E1 /* WebObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AEC6D8B1BA2DCAC00A33B43 /* WebObject.h */; };
+		7A2BC59C1BDE726B008B16E1 /* FBROffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AEC6D8E1BA2DD5100A33B43 /* FBROffer.h */; };
+		7A2BC59D1BDE726B008B16E1 /* OfferImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AEC6D911BA2F2E600A33B43 /* OfferImage.h */; };
+		7A2BC59E1BDE726B008B16E1 /* NewOfferTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A68D7AF1BA6E48F00021FDE /* NewOfferTableViewCell.h */; };
+		7A2BC59F1BDE726B008B16E1 /* NewOffersTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A68D7A81BA6E04A00021FDE /* NewOffersTableViewController.h */; };
+		7A33E51D1BA378070093B137 /* SampleSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A33E51C1BA378070093B137 /* SampleSpec.m */; };
 		7A43DB551BA3711E00B3F3BF /* FyberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A43DB541BA3711E00B3F3BF /* FyberTests.m */; };
-		7A5EC5AF1BA6007400920FD5 /* ViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5EC5AE1BA6007400920FD5 /* ViewControllerSpec.m */; settings = {ASSET_TAGS = (); }; };
+		7A5EC5AF1BA6007400920FD5 /* ViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5EC5AE1BA6007400920FD5 /* ViewControllerSpec.m */; };
+		7A9930D01BDE81BB00900CFE /* NewOffersTableViewControllerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A9930CF1BDE81BB00900CFE /* NewOffersTableViewControllerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A9930D21BDE861000900CFE /* NewOfferTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A68D7AD1BA6E2E800021FDE /* NewOfferTableViewCell.xib */; };
+		7A9930D31BDE8A3300900CFE /* NewOfferTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A68D7AD1BA6E2E800021FDE /* NewOfferTableViewCell.xib */; };
 		7AB90D661BA1A43500479E68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB90D651BA1A43500479E68 /* main.m */; };
 		7AB90D691BA1A43500479E68 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB90D681BA1A43500479E68 /* AppDelegate.m */; };
 		7AB90D6C1BA1A43500479E68 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB90D6B1BA1A43500479E68 /* ViewController.m */; };
 		7AB90D6F1BA1A43500479E68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB90D6D1BA1A43500479E68 /* Main.storyboard */; };
 		7AB90D711BA1A43500479E68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AB90D701BA1A43500479E68 /* Assets.xcassets */; };
 		7AB90D741BA1A43500479E68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB90D721BA1A43500479E68 /* LaunchScreen.storyboard */; };
-		7AB90D7E1BA1BF9A00479E68 /* FBRAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB90D7D1BA1BF9A00479E68 /* FBRAPI.m */; settings = {ASSET_TAGS = (); }; };
-		7AB90D861BA1D17F00479E68 /* NSArray+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB90D811BA1D17F00479E68 /* NSArray+JSONString.m */; settings = {ASSET_TAGS = (); }; };
-		7AB90D871BA1D17F00479E68 /* NSDictionary+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB90D831BA1D17F00479E68 /* NSDictionary+JSONString.m */; settings = {ASSET_TAGS = (); }; };
-		7AB90D881BA1D17F00479E68 /* NSString+Networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB90D851BA1D17F00479E68 /* NSString+Networking.m */; settings = {ASSET_TAGS = (); }; };
-		7AEC6D8D1BA2DCAC00A33B43 /* WebObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AEC6D8C1BA2DCAC00A33B43 /* WebObject.m */; settings = {ASSET_TAGS = (); }; };
-		7AEC6D901BA2DD5100A33B43 /* FBROffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AEC6D8F1BA2DD5100A33B43 /* FBROffer.m */; settings = {ASSET_TAGS = (); }; };
-		7AEC6D931BA2F2E600A33B43 /* OfferImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AEC6D921BA2F2E600A33B43 /* OfferImage.m */; settings = {ASSET_TAGS = (); }; };
-		7AEC6D961BA2FF3800A33B43 /* OffersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AEC6D951BA2FF3800A33B43 /* OffersTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		7AEC6D991BA3070300A33B43 /* OfferTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AEC6D981BA3070300A33B43 /* OfferTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		7AEC6D961BA2FF3800A33B43 /* OffersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AEC6D951BA2FF3800A33B43 /* OffersTableViewController.m */; };
+		7AEC6D991BA3070300A33B43 /* OfferTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AEC6D981BA3070300A33B43 /* OfferTableViewCell.m */; };
+		BF061CB08A16DB1A97391BBF /* libPods-FyberTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1786D203A5FFB219A5D0B212 /* libPods-FyberTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7A2BC5771BDE6B8B008B16E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AB90D591BA1A43500479E68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A2BC56B1BDE6B8B008B16E1;
+			remoteInfo = FyberSDK;
+		};
+		7A2BC5791BDE6B8B008B16E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AB90D591BA1A43500479E68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AB90D601BA1A43500479E68;
+			remoteInfo = Fyber;
+		};
+		7A2BC57F1BDE6B8B008B16E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AB90D591BA1A43500479E68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A2BC56B1BDE6B8B008B16E1;
+			remoteInfo = FyberSDK;
+		};
 		7A43DB571BA3711E00B3F3BF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7AB90D591BA1A43500479E68 /* Project object */;
@@ -39,16 +81,47 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7A2BC5861BDE6B8B008B16E1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7A2BC5821BDE6B8B008B16E1 /* FyberSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1786D203A5FFB219A5D0B212 /* libPods-FyberTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FyberTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A89897C0761100E2E49612E /* libPods-Fyber.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fyber.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A9F27A9538E3B11BF4B18C7 /* libPods-FyberSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FyberSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D4FA7EC3FBC5754D798442D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		3D3886C589C8E4FF7BE823D7 /* Pods-FyberTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FyberTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FyberTests/Pods-FyberTests.debug.xcconfig"; sourceTree = "<group>"; };
+		55DB0D14FF71B3834B38A06E /* Pods-FyberSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FyberSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-FyberSDK/Pods-FyberSDK.release.xcconfig"; sourceTree = "<group>"; };
 		5A2126169B7BC8A8784635D5 /* Pods-FyberTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FyberTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FyberTests/Pods-FyberTests.release.xcconfig"; sourceTree = "<group>"; };
+		663895658603199BED9908BE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A2BC56C1BDE6B8B008B16E1 /* FyberSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FyberSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A2BC5701BDE6B8B008B16E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A2BC5751BDE6B8B008B16E1 /* FyberSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FyberSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A2BC57C1BDE6B8B008B16E1 /* FyberSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FyberSDKTests.m; sourceTree = "<group>"; };
+		7A2BC57E1BDE6B8B008B16E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A2BC58A1BDE6C29008B16E1 /* FyberSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FyberSDK.h; sourceTree = "<group>"; };
+		7A2BC58B1BDE6C29008B16E1 /* FyberSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FyberSDK.m; sourceTree = "<group>"; };
 		7A33E51C1BA378070093B137 /* SampleSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleSpec.m; sourceTree = "<group>"; };
 		7A43DB521BA3711E00B3F3BF /* FyberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FyberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A43DB541BA3711E00B3F3BF /* FyberTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FyberTests.m; sourceTree = "<group>"; };
 		7A43DB561BA3711E00B3F3BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A5EC5AE1BA6007400920FD5 /* ViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerSpec.m; sourceTree = "<group>"; };
+		7A68D7A81BA6E04A00021FDE /* NewOffersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewOffersTableViewController.h; path = ../Fyber/NewOffersTableViewController.h; sourceTree = "<group>"; };
+		7A68D7A91BA6E04B00021FDE /* NewOffersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewOffersTableViewController.m; path = ../Fyber/NewOffersTableViewController.m; sourceTree = "<group>"; };
+		7A68D7AD1BA6E2E800021FDE /* NewOfferTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewOfferTableViewCell.xib; sourceTree = "<group>"; };
+		7A68D7AF1BA6E48F00021FDE /* NewOfferTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewOfferTableViewCell.h; sourceTree = "<group>"; };
+		7A68D7B01BA6E48F00021FDE /* NewOfferTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewOfferTableViewCell.m; sourceTree = "<group>"; };
+		7A9930CF1BDE81BB00900CFE /* NewOffersTableViewControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewOffersTableViewControllerProtocol.h; sourceTree = "<group>"; };
 		7AB90D611BA1A43500479E68 /* Fyber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fyber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB90D651BA1A43500479E68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7AB90D671BA1A43500479E68 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,15 +151,33 @@
 		7AEC6D971BA3070300A33B43 /* OfferTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfferTableViewCell.h; sourceTree = "<group>"; };
 		7AEC6D981BA3070300A33B43 /* OfferTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferTableViewCell.m; sourceTree = "<group>"; };
 		999F872F02B85EEF8C0F634D /* Pods-Fyber.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fyber.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fyber/Pods-Fyber.debug.xcconfig"; sourceTree = "<group>"; };
+		B593928DB395119EE07FEF9A /* Pods-FyberSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FyberSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FyberSDK/Pods-FyberSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		BA1EDAF2146FA69A33784F4D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CC923AC500F208CA8CC47924 /* Pods-Fyber.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fyber.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fyber/Pods-Fyber.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7A2BC5681BDE6B8B008B16E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DB755496D40E7796D12531C /* libPods-FyberSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A2BC5721BDE6B8B008B16E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A2BC5761BDE6B8B008B16E1 /* FyberSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7A43DB4F1BA3711E00B3F3BF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4342BF03DD709E7481A4448F /* libPods-FyberTests.a in Frameworks */,
+				BF061CB08A16DB1A97391BBF /* libPods-FyberTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +185,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33C9459B80F81628A7EDD04D /* libPods-Fyber.a in Frameworks */,
+				7A2BC5811BDE6B8B008B16E1 /* FyberSDK.framework in Frameworks */,
+				68CBC4F751929E9B654A0D49 /* libPods-Fyber.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,8 +198,47 @@
 			children = (
 				1A89897C0761100E2E49612E /* libPods-Fyber.a */,
 				1786D203A5FFB219A5D0B212 /* libPods-FyberTests.a */,
+				2A9F27A9538E3B11BF4B18C7 /* libPods-FyberSDK.a */,
+				663895658603199BED9908BE /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A2BC5661BDE64AC008B16E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7A68D7AF1BA6E48F00021FDE /* NewOfferTableViewCell.h */,
+				7A68D7B01BA6E48F00021FDE /* NewOfferTableViewCell.m */,
+				7A68D7AD1BA6E2E800021FDE /* NewOfferTableViewCell.xib */,
+			);
+			name = View;
+			path = ../Fyber;
+			sourceTree = "<group>";
+		};
+		7A2BC56D1BDE6B8B008B16E1 /* FyberSDK */ = {
+			isa = PBXGroup;
+			children = (
+				7AB90D7B1BA1BF2A00479E68 /* API */,
+				7AB90D7F1BA1D0C100479E68 /* Vendors */,
+				7AEC6D8A1BA2C95400A33B43 /* Model */,
+				7A2BC5661BDE64AC008B16E1 /* View */,
+				7A68D7A81BA6E04A00021FDE /* NewOffersTableViewController.h */,
+				7A68D7A91BA6E04B00021FDE /* NewOffersTableViewController.m */,
+				7A2BC5701BDE6B8B008B16E1 /* Info.plist */,
+				7A2BC58A1BDE6C29008B16E1 /* FyberSDK.h */,
+				7A2BC58B1BDE6C29008B16E1 /* FyberSDK.m */,
+				7A9930CF1BDE81BB00900CFE /* NewOffersTableViewControllerProtocol.h */,
+			);
+			path = FyberSDK;
+			sourceTree = "<group>";
+		};
+		7A2BC57B1BDE6B8B008B16E1 /* FyberSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				7A2BC57C1BDE6B8B008B16E1 /* FyberSDKTests.m */,
+				7A2BC57E1BDE6B8B008B16E1 /* Info.plist */,
+			);
+			path = FyberSDKTests;
 			sourceTree = "<group>";
 		};
 		7A43DB531BA3711E00B3F3BF /* FyberTests */ = {
@@ -126,6 +257,8 @@
 			children = (
 				7AB90D631BA1A43500479E68 /* Fyber */,
 				7A43DB531BA3711E00B3F3BF /* FyberTests */,
+				7A2BC56D1BDE6B8B008B16E1 /* FyberSDK */,
+				7A2BC57B1BDE6B8B008B16E1 /* FyberSDKTests */,
 				7AB90D621BA1A43500479E68 /* Products */,
 				B298493FB0FC1E780F788425 /* Pods */,
 				12A3D8740D709198D7DE895F /* Frameworks */,
@@ -137,6 +270,8 @@
 			children = (
 				7AB90D611BA1A43500479E68 /* Fyber.app */,
 				7A43DB521BA3711E00B3F3BF /* FyberTests.xctest */,
+				7A2BC56C1BDE6B8B008B16E1 /* FyberSDK.framework */,
+				7A2BC5751BDE6B8B008B16E1 /* FyberSDKTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,9 +279,6 @@
 		7AB90D631BA1A43500479E68 /* Fyber */ = {
 			isa = PBXGroup;
 			children = (
-				7AEC6D8A1BA2C95400A33B43 /* Model */,
-				7AB90D7F1BA1D0C100479E68 /* Vendors */,
-				7AB90D7B1BA1BF2A00479E68 /* API */,
 				7AB90D671BA1A43500479E68 /* AppDelegate.h */,
 				7AB90D681BA1A43500479E68 /* AppDelegate.m */,
 				7AB90D6A1BA1A43500479E68 /* ViewController.h */,
@@ -179,6 +311,7 @@
 				7AB90D7D1BA1BF9A00479E68 /* FBRAPI.m */,
 			);
 			name = API;
+			path = ../Fyber;
 			sourceTree = "<group>";
 		};
 		7AB90D7F1BA1D0C100479E68 /* Vendors */ = {
@@ -192,6 +325,7 @@
 				7AB90D851BA1D17F00479E68 /* NSString+Networking.m */,
 			);
 			name = Vendors;
+			path = ../Fyber;
 			sourceTree = "<group>";
 		};
 		7AEC6D8A1BA2C95400A33B43 /* Model */ = {
@@ -205,6 +339,7 @@
 				7AEC6D921BA2F2E600A33B43 /* OfferImage.m */,
 			);
 			name = Model;
+			path = ../Fyber;
 			sourceTree = "<group>";
 		};
 		B298493FB0FC1E780F788425 /* Pods */ = {
@@ -214,22 +349,87 @@
 				CC923AC500F208CA8CC47924 /* Pods-Fyber.release.xcconfig */,
 				3D3886C589C8E4FF7BE823D7 /* Pods-FyberTests.debug.xcconfig */,
 				5A2126169B7BC8A8784635D5 /* Pods-FyberTests.release.xcconfig */,
+				B593928DB395119EE07FEF9A /* Pods-FyberSDK.debug.xcconfig */,
+				55DB0D14FF71B3834B38A06E /* Pods-FyberSDK.release.xcconfig */,
+				BA1EDAF2146FA69A33784F4D /* Pods.debug.xcconfig */,
+				2D4FA7EC3FBC5754D798442D /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		7A2BC5691BDE6B8B008B16E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A2BC58C1BDE6C29008B16E1 /* FyberSDK.h in Headers */,
+				7A2BC5971BDE726B008B16E1 /* FBRAPI.h in Headers */,
+				7A2BC5981BDE726B008B16E1 /* NSArray+JSONString.h in Headers */,
+				7A2BC5991BDE726B008B16E1 /* NSDictionary+JSONString.h in Headers */,
+				7A2BC59A1BDE726B008B16E1 /* NSString+Networking.h in Headers */,
+				7A2BC59B1BDE726B008B16E1 /* WebObject.h in Headers */,
+				7A2BC59C1BDE726B008B16E1 /* FBROffer.h in Headers */,
+				7A2BC59D1BDE726B008B16E1 /* OfferImage.h in Headers */,
+				7A9930D01BDE81BB00900CFE /* NewOffersTableViewControllerProtocol.h in Headers */,
+				7A2BC59E1BDE726B008B16E1 /* NewOfferTableViewCell.h in Headers */,
+				7A2BC59F1BDE726B008B16E1 /* NewOffersTableViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		7A2BC56B1BDE6B8B008B16E1 /* FyberSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A2BC5831BDE6B8B008B16E1 /* Build configuration list for PBXNativeTarget "FyberSDK" */;
+			buildPhases = (
+				2DE8A0532E546BEA5DF62102 /* Check Pods Manifest.lock */,
+				7A2BC5671BDE6B8B008B16E1 /* Sources */,
+				7A2BC5681BDE6B8B008B16E1 /* Frameworks */,
+				7A2BC5691BDE6B8B008B16E1 /* Headers */,
+				7A2BC56A1BDE6B8B008B16E1 /* Resources */,
+				3E8FF368CF7CE1FA24054BB2 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FyberSDK;
+			productName = FyberSDK;
+			productReference = 7A2BC56C1BDE6B8B008B16E1 /* FyberSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7A2BC5741BDE6B8B008B16E1 /* FyberSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A2BC5871BDE6B8B008B16E1 /* Build configuration list for PBXNativeTarget "FyberSDKTests" */;
+			buildPhases = (
+				7A2BC5711BDE6B8B008B16E1 /* Sources */,
+				7A2BC5721BDE6B8B008B16E1 /* Frameworks */,
+				7A2BC5731BDE6B8B008B16E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A2BC5781BDE6B8B008B16E1 /* PBXTargetDependency */,
+				7A2BC57A1BDE6B8B008B16E1 /* PBXTargetDependency */,
+			);
+			name = FyberSDKTests;
+			productName = FyberSDKTests;
+			productReference = 7A2BC5751BDE6B8B008B16E1 /* FyberSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		7A43DB511BA3711E00B3F3BF /* FyberTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A43DB5B1BA3711E00B3F3BF /* Build configuration list for PBXNativeTarget "FyberTests" */;
 			buildPhases = (
-				47692A86AF079ED31C68BA9E /* Check Pods Manifest.lock */,
+				8DC61A11E7F62BFC34CABAAB /* Check Pods Manifest.lock */,
 				7A43DB4E1BA3711E00B3F3BF /* Sources */,
 				7A43DB4F1BA3711E00B3F3BF /* Frameworks */,
 				7A43DB501BA3711E00B3F3BF /* Resources */,
-				9862F1A1DFA72EE529E0218E /* Copy Pods Resources */,
+				14BBD25452465BC69FCDB250 /* Embed Pods Frameworks */,
+				5A229BA7C93A90232095D7A7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,15 +445,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7AB90D781BA1A43500479E68 /* Build configuration list for PBXNativeTarget "Fyber" */;
 			buildPhases = (
-				C217EB0343FFB8642A25565C /* Check Pods Manifest.lock */,
+				C9D8B21A5537BF5590E41F6D /* Check Pods Manifest.lock */,
 				7AB90D5D1BA1A43500479E68 /* Sources */,
 				7AB90D5E1BA1A43500479E68 /* Frameworks */,
 				7AB90D5F1BA1A43500479E68 /* Resources */,
-				E90B5EE68E72CA197978D8BC /* Copy Pods Resources */,
+				7A2BC5861BDE6B8B008B16E1 /* Embed Frameworks */,
+				AED34E6B59A64295BBB10CBF /* Embed Pods Frameworks */,
+				C6949CF2C5987BC03C23DCBF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7A2BC5801BDE6B8B008B16E1 /* PBXTargetDependency */,
 			);
 			name = Fyber;
 			productName = Fyber;
@@ -269,6 +472,14 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Evgeniy Disyak";
 				TargetAttributes = {
+					7A2BC56B1BDE6B8B008B16E1 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = LCV728N365;
+					};
+					7A2BC5741BDE6B8B008B16E1 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 7AB90D601BA1A43500479E68;
+					};
 					7A43DB511BA3711E00B3F3BF = {
 						CreatedOnToolsVersion = 7.0;
 						TestTargetID = 7AB90D601BA1A43500479E68;
@@ -294,11 +505,28 @@
 			targets = (
 				7AB90D601BA1A43500479E68 /* Fyber */,
 				7A43DB511BA3711E00B3F3BF /* FyberTests */,
+				7A2BC56B1BDE6B8B008B16E1 /* FyberSDK */,
+				7A2BC5741BDE6B8B008B16E1 /* FyberSDKTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7A2BC56A1BDE6B8B008B16E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A9930D21BDE861000900CFE /* NewOfferTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A2BC5731BDE6B8B008B16E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7A43DB501BA3711E00B3F3BF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -311,6 +539,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AB90D741BA1A43500479E68 /* LaunchScreen.storyboard in Resources */,
+				7A9930D31BDE8A3300900CFE /* NewOfferTableViewCell.xib in Resources */,
 				7AB90D711BA1A43500479E68 /* Assets.xcassets in Resources */,
 				7AB90D6F1BA1A43500479E68 /* Main.storyboard in Resources */,
 			);
@@ -319,7 +548,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		47692A86AF079ED31C68BA9E /* Check Pods Manifest.lock */ = {
+		14BBD25452465BC69FCDB250 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FyberTests/Pods-FyberTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DE8A0532E546BEA5DF62102 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -334,7 +578,22 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		9862F1A1DFA72EE529E0218E /* Copy Pods Resources */ = {
+		3E8FF368CF7CE1FA24054BB2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FyberSDK/Pods-FyberSDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A229BA7C93A90232095D7A7 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -349,7 +608,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FyberTests/Pods-FyberTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C217EB0343FFB8642A25565C /* Check Pods Manifest.lock */ = {
+		8DC61A11E7F62BFC34CABAAB /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -364,7 +623,22 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		E90B5EE68E72CA197978D8BC /* Copy Pods Resources */ = {
+		AED34E6B59A64295BBB10CBF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fyber/Pods-Fyber-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6949CF2C5987BC03C23DCBF /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -379,9 +653,49 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fyber/Pods-Fyber-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C9D8B21A5537BF5590E41F6D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7A2BC5671BDE6B8B008B16E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A2BC58E1BDE7250008B16E1 /* FBRAPI.m in Sources */,
+				7A2BC58F1BDE7250008B16E1 /* NSArray+JSONString.m in Sources */,
+				7A2BC5901BDE7250008B16E1 /* NSDictionary+JSONString.m in Sources */,
+				7A2BC5911BDE7250008B16E1 /* NSString+Networking.m in Sources */,
+				7A2BC5921BDE7250008B16E1 /* WebObject.m in Sources */,
+				7A2BC5931BDE7250008B16E1 /* FBROffer.m in Sources */,
+				7A2BC5941BDE7250008B16E1 /* OfferImage.m in Sources */,
+				7A2BC5951BDE7250008B16E1 /* NewOfferTableViewCell.m in Sources */,
+				7A2BC5961BDE7250008B16E1 /* NewOffersTableViewController.m in Sources */,
+				7A2BC58D1BDE6C29008B16E1 /* FyberSDK.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A2BC5711BDE6B8B008B16E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A2BC57D1BDE6B8B008B16E1 /* FyberSDKTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7A43DB4E1BA3711E00B3F3BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -397,23 +711,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AEC6D991BA3070300A33B43 /* OfferTableViewCell.m in Sources */,
-				7AB90D861BA1D17F00479E68 /* NSArray+JSONString.m in Sources */,
-				7AB90D871BA1D17F00479E68 /* NSDictionary+JSONString.m in Sources */,
 				7AB90D6C1BA1A43500479E68 /* ViewController.m in Sources */,
-				7AEC6D8D1BA2DCAC00A33B43 /* WebObject.m in Sources */,
 				7AB90D691BA1A43500479E68 /* AppDelegate.m in Sources */,
-				7AB90D881BA1D17F00479E68 /* NSString+Networking.m in Sources */,
-				7AEC6D931BA2F2E600A33B43 /* OfferImage.m in Sources */,
 				7AB90D661BA1A43500479E68 /* main.m in Sources */,
 				7AEC6D961BA2FF3800A33B43 /* OffersTableViewController.m in Sources */,
-				7AEC6D901BA2DD5100A33B43 /* FBROffer.m in Sources */,
-				7AB90D7E1BA1BF9A00479E68 /* FBRAPI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7A2BC5781BDE6B8B008B16E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A2BC56B1BDE6B8B008B16E1 /* FyberSDK */;
+			targetProxy = 7A2BC5771BDE6B8B008B16E1 /* PBXContainerItemProxy */;
+		};
+		7A2BC57A1BDE6B8B008B16E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7AB90D601BA1A43500479E68 /* Fyber */;
+			targetProxy = 7A2BC5791BDE6B8B008B16E1 /* PBXContainerItemProxy */;
+		};
+		7A2BC5801BDE6B8B008B16E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A2BC56B1BDE6B8B008B16E1 /* FyberSDK */;
+			targetProxy = 7A2BC57F1BDE6B8B008B16E1 /* PBXContainerItemProxy */;
+		};
 		7A43DB581BA3711E00B3F3BF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7AB90D601BA1A43500479E68 /* Fyber */;
@@ -441,6 +763,76 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7A2BC5841BDE6B8B008B16E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B593928DB395119EE07FEF9A /* Pods-FyberSDK.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = FyberSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NewVisionLLC.FyberSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7A2BC5851BDE6B8B008B16E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55DB0D14FF71B3834B38A06E /* Pods-FyberSDK.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = FyberSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NewVisionLLC.FyberSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7A2BC5881BDE6B8B008B16E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FyberSDKTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NewVisionLLC.FyberSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fyber.app/Fyber";
+			};
+			name = Debug;
+		};
+		7A2BC5891BDE6B8B008B16E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FyberSDKTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NewVisionLLC.FyberSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fyber.app/Fyber";
+			};
+			name = Release;
+		};
 		7A43DB591BA3711E00B3F3BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D3886C589C8E4FF7BE823D7 /* Pods-FyberTests.debug.xcconfig */;
@@ -594,6 +986,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7A2BC5831BDE6B8B008B16E1 /* Build configuration list for PBXNativeTarget "FyberSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A2BC5841BDE6B8B008B16E1 /* Debug */,
+				7A2BC5851BDE6B8B008B16E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A2BC5871BDE6B8B008B16E1 /* Build configuration list for PBXNativeTarget "FyberSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A2BC5881BDE6B8B008B16E1 /* Debug */,
+				7A2BC5891BDE6B8B008B16E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7A43DB5B1BA3711E00B3F3BF /* Build configuration list for PBXNativeTarget "FyberTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

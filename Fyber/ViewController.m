@@ -7,10 +7,11 @@
 //
 
 #import "ViewController.h"
-#import "FBRAPI.h"
+#import "FyberSDK.h"
 #import "OffersTableViewController.h"
+#import "NewOffersTableViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <NewOffersTableViewControllerDelegate>
 
 @property (strong, nonatomic) NSArray *array;
 
@@ -24,9 +25,13 @@
     self.userID.delegate = self;
     self.apiKey.delegate = self;
     self.appID.delegate = self;
+    
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
     // Prepopulate text fields with folowwing data
     self.userID.text    = @"spiderman";
     self.apiKey.text    = @"1c915e3b5d42d05136185030892fbb846c278927";
@@ -53,6 +58,15 @@
         return;
     }
     
+    [FyberSDK setupFiberWithUserId:self.userID.text
+                       andApiKey:self.apiKey.text
+                        andAppID:self.appID.text];
+    
+    [FyberSDK showOfferWall:self];
+    
+        //[self presentViewController:noTVC animated:YES completion:nil];
+    return;
+    /*
     // In case of TASK 7, this method can be run at once on AppDelegate file. It will initialize Fiber SDK
     [FBRAPI setupFiberWithUserId:self.userID.text
                        andApiKey:self.apiKey.text
@@ -75,6 +89,7 @@
                             // IF wrong responce -> FAIL message
                             [self displayNotificationMessageWithTitle:@"Fail!" andText:@"Check your data and try again later."];
                         }];
+     */
 }
 
 - (void)displayNotificationMessageWithTitle: (NSString *)title
@@ -98,6 +113,7 @@
 }
 
 #pragma mark - UITextFieldDelegate
+
 // Dismiss keyboard on DONE button tap
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
@@ -107,6 +123,15 @@
 // Dismiss keyboard on any View tap
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [self.view endEditing:YES];
+}
+
+# pragma mark - NewOffersTableViewControllerDelegate
+
+- (void)viewControllerClosedByButtonTap {
+    NSLog(@"Ads ViewController closed by Close button");
+}
+- (void)viewControllerClosedByCellTap {
+    NSLog(@"Ads ViewController closed by Tap on cell");
 }
 
 @end

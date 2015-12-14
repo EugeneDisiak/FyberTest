@@ -15,9 +15,14 @@ typedef void(^RequestFailure)(NSError *error, AFHTTPRequestOperation *operation)
 
 @interface FBRAPI : NSObject
 
+//
+// Get Offer Wall
+//
 + (AFHTTPRequestOperation *)getOffersWithSuccess:(ArrayCompleiton)success
                                          failure:(RequestFailure)failure;
-
+//
+// Setup credentials
+//
 + (void)setupFiberWithUserId:(NSString *)userID
                      andApiKey:(NSString *)apiKey
                       andAppID:(NSString *)appID;
